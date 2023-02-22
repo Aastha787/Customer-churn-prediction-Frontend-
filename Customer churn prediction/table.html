@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equip="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Prediction Form</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="navbar1">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="table.html">Let's Predict</a></li>
+            </ul>
+        </div>   
+         <header>Prediction Form</header>
+        <form action="#">
+            <div class="form first">
+            <div class="details">
+                <span class="title"> Customer Details </span>
+                <div class="fields">
+                <div class="input-field">
+                    <input type="number" placeholder="Enter Age" required>
+                </div>
+                <div class="input-field">
+                    <input type="number" placeholder="Days since last login" required>
+                </div>
+            
+                <div class="input-field">
+                     <input type="text" placeholder="Average time spent" required>
+                </div>
+
+                <div class="input-field">
+                    <input type="text" placeholder="Average transaction value" required>
+               </div>
+
+               <div class="input-field">
+                    <label>Enter date(mm/dd/yyy)</label>
+                    <input type="date" placeholder=" " required>
+               </div>
+               
+               <div class="input-field">
+                   <label>Enter time</label>
+                   <input type="time" placeholder="Enter time" required>
+               </div>
+
+               <div class="input-field" >
+                <input type="text" placeholder="Points in wallet" required>
+           </div>
+           
+            </div>
+            
+        </div>
+
+
+        <!--Select options-->
+        <div class="form second">
+        <div class="details Id">
+            <span class="title">Select choices</span>
+            <div class="fields">
+            <div class="input-field">
+                <select id="gender">
+                    <option value="" disabled selected hidden>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Other</option>
+                </select>
+             </div>
+            <div class="input-field">
+                <select id="region" >
+                    <option value="" disabled selected hidden>Select Region</option>
+                    <option value="town">Town</option>
+                    <option value="city">City</option>
+                    <option value="village">Village</option>
+                </select>
+            </div>
+        
+            <div class="input-field">
+                <select id="membership">
+                    <option value="" disabled selected hidden>Select Membership Category</option>
+                    <option value="basic">Basic Membership</option>
+                    <option value="no">No Membership</option>
+                    <option value="gold">Gold Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="premium">Premium Membership</option>
+                </select>
+            </div>
+
+            <div class="input-field">
+                <select id="refer">
+                    <option value="" disabled selected hidden>Select Joined Through Reffereal</option>
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                 </select>
+           </div>
+           
+           <div class="input-field">
+            <select id="offer">
+                <option value="" disabled selected hidden>Select Preffered Offer Types</option>
+                <option value="gift">Gift vouchers/coupun</option>
+                <option value="credit">Credit/Debit card offer</option>
+                <option value="noOffer">Without Offer</option>
+            </select>
+           </div>
+           
+           <div class="input-field">
+            <select id="operation">
+                <option value="" disabled selected hidden>Select Medium Of Opeeration</option>
+                <option value="desktop">Desktop</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="both">Both</option>
+            </select>
+           </div>
+
+           <div class="input-field">
+            <select id="internet">
+                <option value="" disabled selected hidden>Select Internet Option</option>
+                <option value="wifi">WiFi</option>
+                <option value="mobile">Mobile Data</option>
+                <option value="fiber">Fiber Optic</option>
+            </select>
+           </div>
+
+           <div class="input-field">
+            <select id="discount">
+                <option value="" disabled selected hidden>Select Used Special Discount</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select id="preference">
+                <option value="" disabled selected hidden>Select Offer Application Preference</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select id="complain">
+                <option value="" disabled selected hidden>Select Past Complaint</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+             </select>
+           </div>
+
+           <div class="input-field">
+            <select id="feedback">
+                <option value="" disabled selected hidden>Select Feedback</option>
+                <option value="poor">Poor Product Quality</option>
+                <option value="reason">No reason Specified</option>
+                <option value="ads">Poor Website</option>
+                <option value="ads">Poor customer service</option>
+                <option value="ads">Reasonable Price</option>
+                <option value="ads">User Friendly website</option>
+                <option value="ads">Products always in stock</option>
+                <option value="ads">Quality Customer care</option>
+
+            </select>
+           </div>
+        </div>   
+        <button type="submit" class="btn btn-primary">PREDICT</button>    
+        </div>
+    </div>
+         </form>
+    </div>
+    <script src="script.js"></script>
+    </script>
+</body>
+</html>
